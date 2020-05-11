@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+       
+       <!-- Idioma español de España-->
+       <meta charset="utf-8">
+       
+       <!-- Este es mi comentario-->
+       <title>Graphic Work</title>
+       
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+       
+       <!-- enlazo el favicon: -->
+       <link rel="icon" href="img/favicon.ico/favicon.ico">
+
+       <!-- enlazo HOJAS DE ESTILO: -->
+       <link rel="stylesheet" href="css/graphic_work.css">
+      
+       <link rel="stylesheet" href="css/fontello.css">
+       
+       <!-- enlazo TIPOGRAFÍA: -->
+       <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+       
+       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+       
+       <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    </head>
+    
+    <body>
+           <div class="icon-up" for="iconoup"></div>
+           
+            <header> 
+               <div class="back"><a href="work.html"><label class="icon-left" id="iconoleft">BACK</label></a></div>
+               
+                <div class="nombre2"><a href="home.html">CARLOTA FERNÁNDEZ</a></div>
+            </header>
+   
+                    
+            <main>
+            <section class="me"><h1>GRAPHIC WORK</h1></section>
+            
+            <center>
+                <section class="carteles">
+                    <img src="img/graphicwork/obra1.png" alt="">
+                    <img src="img/graphicwork/obra3.png" alt="">
+                    <img src="img/graphicwork/obra5.png" alt="">
+                    <img src="img/graphiCwork/obra7.png" alt="">
+                    <img src="img/graphicwork/obra2.png" alt="">
+                    <img src="img/graphicwork/obra4.png" alt="">
+                    <img src="img/graphicwork/obra6.png" alt="">
+                    <img src="img/graphiCwork/obra8.png" alt="">
+                </section>
+                
+                <img src="img/graphicwork/obra9.png" alt="">
+
+                <article class="texto">
+                    <h2>These works are made with different techniques such as etching, serigraphy or roll up. To get the final results we used some materials to experiment..</h2>
+                </article>
+            </center>
+            </main>
+            
+            <footer>
+                <h3>© 2020 CARLOTA FERNÁNDEZ. All Rights Reserved</h3>
+            </footer>
+        <script src="js/menu.js"></script>
+        <script>
+            $(function(){
+                 /*Aparecer y desaparecer*/
+
+                 /*if(condiction){
+                        orden
+                    } else{
+                        orden
+                    }*/
+         
+                $(window).scroll(function(){
+             
+                    if($(this).scrollTop() > 50){
+                        $(".icon-up").slideDown("fast");
+                    } else {
+                         $(".icon-up").slideUp("fast");
+                    }
+                });
+                 /*clic y animacion boton*/
+                 /*$(que_queremos_animar).animate({propiedades_de_animacion}, duracion)*/
+         
+                 $(".icon-up").click(function(){
+
+                     $("html,body").animate({
+                        scrollTop:"0px"
+                    },200)       
+                 });
+              })  
+        </script>    
+    </body>
+</html>

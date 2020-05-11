@@ -1,0 +1,109 @@
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header .icon-menu4{
+    right:0px;
+    font-size: 40px;
+    color:white;
+    text-align:right;
+    position: fixed;
+    z-index: 160;
+    margin-top: 10px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+header .icon-menu4:hover{
+    color:gray;
+}
+
+nav{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 150;
+    background-color: black;
+    transform: translateY(-100%);
+    transition: all 1s;
+    margin-top: 70px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 100px;
+    padding: 0px;
+}
+
+nav ul li {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: gray;
+}
+
+.mostrar{
+    transform: translateY(0%);
+}
+
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 722px) {
+    header .icon-menu4{
+        display:none;
+    }
+    
+    header .icon-menu4:hover{
+        display:none;
+    }
+    
+    nav { /*meter el buscador*/
+        width: 60%;
+        height: 80px;        
+        margin-top: 80px;
+        position: fixed;
+		z-index: 150;
+        transition: none;
+        text-align: right;
+        right: 45px;
+    }
+    
+    nav ul {
+        border-top: 0px;
+        margin-top: 16px;
+    }
+    
+    nav ul li {
+        font-family: 'Manrope', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-align: right;
+        padding-left: 40px;
+        display: inline-block;
+    } 
+}
+
+@media (min-width: 1024px) {
+    header .icon-menu4{
+        font-size: 42px;
+        margin-top: 22px;
+        margin-right:20px;
+    }
+}
+

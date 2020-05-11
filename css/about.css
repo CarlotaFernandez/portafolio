@@ -1,0 +1,392 @@
+/*mi comentario
+si la etiqueta lleba ID
+#(nombre del id) {
+    
+}*/
+
+/*si la etiqueta lleva class
+.(nombre de la class) {
+    
+}*/
+
+/*si no lleva ni ID ni class
+
+
+static | relative | absolute | sticky | fixed */
+
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif; 
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
+}
+
+/*Scroll*/   
+body .icon-up{
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 20px;
+        left: 0px;
+        display: none;
+        cursor: pointer;
+        z-index: 100;
+        color:white;
+        font-size: 30px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 300;
+    background-color: black;
+}
+
+header .nombre2{
+    width: 50%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding-left:25px;
+    margin-top: 33px;
+    position: fixed;
+    z-index: 160;
+}
+
+header .nombre2 a{
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+header .nombre2 a:hover{
+    color: gray;
+}
+
+main{
+    width: 100%;
+    margin:0px;
+}
+
+main .me{
+    width: 75%;
+    padding-top: 90px;
+    text-align: center;
+    color: white;
+}
+
+main .me h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+main .foto{
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+main .parrafo1{
+    width: 90%;
+    margin-top: 30px;
+    text-align: justify all;
+    max-width: 600px;
+}
+
+main .parrafo1 h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    color:gray;
+}
+
+main .parrafo1 h3{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    color: white;
+}
+
+main .parrafo2{
+    width: 90%;
+    margin-top: 70px;
+}
+
+main .parrafo2 h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    color:gray;
+}
+
+main .parrafo2 h3{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:white;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+
+main .servicios{
+    width: 90%;
+    max-width: 600px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: gray;
+    margin-top: 0px;
+}
+
+main .franjalogos{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:50px;
+}
+
+main .franjalogos a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+main .franjalogos a:hover{
+    color:gray;
+}
+
+
+/*imagenes con boton hover*/
+main .imagenes{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera*/
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+main .imagenes .titulo{
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.titulo img{
+    width: 100%;
+    z-index: 4;
+    float: left;
+}
+
+
+.titulo .logo img{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 4;
+    float: left;
+}
+
+.titulo:hover .fade{
+    opacity: 1;
+}
+
+.titulo .fade{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+	-webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+	-o-transition:all 0.45s ease-in-out;
+	-ms-transition:all 0.45s ease-in-out;
+	transition:all 0.45s ease-in-out;
+}
+
+.fade .fondo{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.72);
+    z-index: 5;
+    position: absolute; 
+}
+
+.fade .boton{
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 10;
+    position: absolute;
+    margin: 0px;
+    margin-top: 100px;    
+}
+
+.fade .boton a{
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+    padding: 20px;
+    padding-top:9px;
+    padding-bottom:11px;
+    border: 2px solid white;
+}
+
+.fade .boton a:hover{
+    color:black;
+    background-color: white;
+}
+
+
+
+
+main .frase{
+    width: 70%;
+    max-width: 600px;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+footer{
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+footer h3{
+    font-size: 10px;
+    font-weight: 300;
+    color: gray;
+    margin: 0px;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 722px) {
+    body .icon-up{
+        bottom: 30px;
+        left: 10px; 
+    }
+    
+    header .nombre2{
+        font-size: 14px;
+        padding-left: 40px;
+        margin-top: 45px;
+    }
+    
+    main .me{
+        width: 70%;
+    }
+    
+    main .me h1{
+        font-size: 44px;
+    }
+    
+    main .parrafo1 h2{
+        font-size: 14px;
+    }
+
+    main .parrafo1 h3{
+        font-size: 14px;
+    }
+    
+    main .parrafo2 h2{
+        font-size: 14px;
+    }
+    
+    main .parrafo2 h3{
+        font-size: 17px;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+
+    main .franjalogos a{
+        font-size: 21px;
+    }
+    
+    .fade .boton{
+        margin-top: 150px;
+        font-size: 14px;
+    }
+    
+    main .frase{
+        font-size: 21px;
+    }
+    
+    footer h3{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .parrafo1 h2{
+        font-size: 15px;
+    }
+
+    main .parrafo1 h3{
+        font-size: 15px;
+    }
+    
+    main .parrafo2 h2{
+        font-size: 15px;
+    }
+    
+     main .parrafo2 h3{
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    main .franjalogos a{
+        font-size: 22px;
+    }
+    
+}

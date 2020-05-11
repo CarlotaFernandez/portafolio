@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+       
+       <!-- Idioma español de España-->
+       <meta charset="utf-8">
+       
+       <!-- Este es mi comentario-->
+       <title>About</title>
+       
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+       
+       <!-- enlazo el favicon: -->
+       <link rel="icon" href="img/favicon.ico/favicon.ico">
+
+       <!-- enlazo HOJAS DE ESTILO: -->
+       <link rel="stylesheet" href="css/about.css">
+       <link rel="stylesheet" href="css/menu.css">
+      
+       <link rel="stylesheet" href="css/fontello.css">
+       
+       <!-- enlazo TIPOGRAFÍA: -->
+       <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+       
+       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+       
+       <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    </head>
+    
+    <body>
+           
+           <div class="icon-up" for="iconoup"></div>
+            
+            <header>
+                <div class="nombre2"><a href="home.html">CARLOTA FERNÁNDEZ</a></div>
+                   
+                <label class="icon-menu4" id="iconomenu"></label>    
+            
+                <nav class="transicion">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="img/CV.pdf" target="_blank">CV</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+           
+            <main>
+              <center><section class="me"><h1>ILLUSTRATOR & GRAPHIC DESIGNER</h1></section>
+               
+                
+               <img class="foto" src="img/about.jpeg" width="90%" alt="">
+                
+               
+               <article class="parrafo1">
+                   <h2>Currently I am finishing the last year of my degree in Fine Arts. I have always been really creative and perfectionist. During this years, I have learnt so many things that have helped me improve my knowledge and be the person I am today. In this time I have developed certain interest in graphic and web design and also in illustration.
+                   <br>
+                   <br>
+                   In a few years, I see myself working with brands maybe as a publicist or even as an event planner.</h2>
+
+                   <h3><b>. . .</b><h3>
+
+                   <h3><b>Let's make a difference.</b></h3>
+               </article>
+               
+                
+               
+               <article class="parrafo2">
+                   <h2>WHAT I DO?</h2>
+                    
+                   <h3><b>MY SERVICES</b></h3>
+               </article>
+               
+               
+            
+               <article class="servicios">
+                       <p>
+                       Edition and layout of books
+                       <br>
+                       Brand design
+                       <br>
+                       Logo design
+                       <br>
+                       Advertising designer
+                       </p>
+                       
+                       <p>
+                       HTML / CSS
+                       <br>
+                       Web design
+                       <br>
+                       Responsive design
+                       </p>
+               </article>
+               </center> 
+               
+               <section class="franjalogos">                
+                   <a class="icon-instagram" for="iconoinstagram" href="https://www.instagram.com/carlotafd98/?hl=es" target="_blank"></a>
+                   
+                   <a class="icon-facebook" for="iconoinstagram" href="https://www.facebook.com/carlota.fernandez.1048" target="_blank"></a>
+                   
+                   <a class="icon-linkedin" for="iconolinkedin" href="https://www.linkedin.com/in/carlota-fern%C3%A1ndez-dom%C3%ADnguez-1a949a187/" target="_blank"></a>
+               </section>
+               
+               <!--colocar enlaces con imagenes y botones-->
+               
+               <center>
+                   <section class="imagenes">
+                     
+                     <section class="titulo">
+                          <img src="img/srt/poster.png" alt="">
+                          <div class="fade">
+                              <div class="fondo"></div>
+                              <div class="boton"><a href="srt.html">SEE MORE</a></div>
+                          </div>
+                      </section>
+
+                      <section class="titulo">
+                          <div class="logo"><img src="img/design/LOGOJESS.png" alt=""></div>
+                          <div class="fade">
+                              <div class="fondo"></div>
+                              <div class="boton"><a href="design.html">SEE MORE</a></div>
+                          </div>
+                           
+                      </section>
+                   </section>
+                   
+               
+                <div class="frase">“GO CONFIDENTLY IN THE DIRECTION OF YOUR DREAMS. LIVE THE LIVE YOU HAVE IMAGINED.”<br><br><font color="gray">— HENRY DAVID THOREAU</font></div>
+               </center>
+            </main>
+            
+            <footer>
+                <h3>© 2020 CARLOTA FERNÁNDEZ. All Rights Reserved</h3>
+            </footer>
+          
+              
+        <script src="js/menu.js"></script>
+        <script>
+            $(function(){
+                 /*Aparecer y desaparecer*/
+
+                 /*if(condiction){
+                        orden
+                    } else{
+                        orden
+                    }*/
+         
+                $(window).scroll(function(){
+             
+                    if($(this).scrollTop() > 50){
+                        $(".icon-up").slideDown("fast");
+                    } else {
+                         $(".icon-up").slideUp("fast");
+                    }
+                });
+                 /*clic y animacion boton*/
+                 /*$(que_queremos_animar).animate({propiedades_de_animacion}, duracion)*/
+         
+                 $(".icon-up").click(function(){
+
+                     $("html,body").animate({
+                        scrollTop:"0px"
+                    },200)       
+                 });
+              })  
+        </script>    
+    </body>
+</html>
+
+

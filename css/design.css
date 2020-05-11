@@ -1,0 +1,225 @@
+/*mi comentario
+si la etiqueta lleba ID
+#(nombre del id) {
+    
+}*/
+
+/*si la etiqueta lleva class
+.(nombre de la class) {
+    
+}*/
+
+/*si no lleva ni ID ni class
+
+
+static | relative | absolute | sticky | fixed */
+
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif; 
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
+}
+
+/*Scroll*/   
+body .icon-up{
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 20px;
+        left: 0px;
+        display: none;
+        cursor: pointer;
+        z-index: 100;
+        color:white;
+        font-size: 30px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 300;
+    background-color: black;
+    
+}
+
+header .back{
+    width: 50%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-left:20px;
+    margin-top: 33px;
+    position: fixed;
+    z-index: 160;
+}
+
+header .back a{
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+header .back a:hover{
+    color: gray;
+}
+
+header .nombre2{
+    width: 50%;
+    right: 0px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: 4px;
+    padding-right:25px;
+    margin-top: 33px;
+    position: fixed;
+    z-index: 160;
+}
+
+header .nombre2 a{
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+header .nombre2 a:hover{
+    color: gray;
+}
+
+main{
+    width: 100%;
+    margin:0px;
+}
+
+main .me{
+    width: 100%;
+    padding-top: 90px;
+    text-align: center;
+    color: white;
+}
+
+main .me h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+main .carteles{
+    width: 90%;
+    max-width: 600px;
+}
+
+main .carteles img{
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+main .carteles{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+main .texto{
+    width: 75%;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+main .texto .titulo{
+    width: 70%;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+main .texto h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    color:gray;
+    margin-bottom: 40px;
+}
+
+footer{
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer h3{
+    font-size: 10px;
+    font-weight: 300;
+    color: gray;
+    margin: 0px;
+    letter-spacing: 1.5px;
+}
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 722px) {
+    body .icon-up{
+        bottom: 30px;
+        left: 10px; 
+    }
+    
+    header .back{
+        font-size: 14px;
+        margin-top: 45px;
+        padding-left: 30px;
+    }
+    
+    header .nombre2{
+        font-size: 14px;
+        padding-left: 40px;
+        margin-top: 45px;
+    }
+    
+    main .me h1{
+        font-size: 44px;
+    }
+    
+    main .texto .titulo{
+        font-size: 21px;
+    }
+
+    main .texto h2{
+        font-size: 14px;
+    }
+
+    footer h3{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .texto .titulo{
+        font-size: 22px;
+    }
+
+    main .texto h2{
+        font-size: 15px;
+    }
+}
